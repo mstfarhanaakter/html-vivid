@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+        table, th, td{
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 30px;
+            margin-left: 40px;
+            font-size: 18px;
+        }
+        td.right{
+            text-align: right;
+        }
+        table{
+            width: 60%;
+        }
+        td{
+            text-align: center;
+        }
+        td.left{
+            text-align: left;
+        }
+        td.justify{
+            text-align: center;
+        }
+        tr{
+            background-color: rgb(255, 242, 225);
+        }
+        tr.col{
+            background-color: rgb(195, 149, 238);
+            color: white;
+            font-weight: bold;
+            
+        }
+        td:hover{
+            background-color: lightgreen;
+            color: red;
+        }
+        tr:hover{
+            background-color: rgb(97, 232, 241);
+            color: blue;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <table>
+        <tr class="col">
+            <th>Col-1</th>
+            <th>Col-2</th>
+            <th>Col-3</th>
+            <th>Col-4</th>
+        </tr>
+        <tr >
+            <td class="left" >Left</td>
+            <td class="right">Right</td>
+            <td>Center</td>
+            <td class="justify">Justify the content</td>
+        </tr><tr>
+            <td class="left">Left</td>
+            <td class="right">Right</td>
+            <td>Center</td>
+            <td class="justify">Justify the content</td>
+        </tr><tr>
+            <td class="left">Left</td>
+            <td class="right">Right</td>
+            <td>Center</td>
+            <td class="justify">Justify the content</td>
+        </tr>
+
+    </table>
 </body>
 </html>

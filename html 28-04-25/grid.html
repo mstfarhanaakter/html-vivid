@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            background-color: blanchedalmond;
+            padding: 10px;
+            /* display: inline-grid; */
+            display: grid;
+            text-align: center;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 300px 100px 50px 80px  ;
+            /* gap: 10px; */
+            margin-top: 20px;
+            grid-row-gap: 10px;
+            grid-column-gap: 15px;
+            /* align-items: center;
+            justify-content: center; */
+            
+        }
+        .grid-container>div{
+            border: 2px solid Black;
+        }
+        img{
+            width: 190px;
+            margin-top: 6px;
+        }
+        .box2{
+            color: red;
+        }
+        video{
+            width: 160px;
+        }
+        .box1{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            /* grid-column: 1 / span 3; */
+            /* grid-row: 1/ span 2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box1"><img src="https://images.pexels.com/photos/16747471/pexels-photo-16747471/free-photo-of-sheds-in-tropical-forest-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="box2" ><img src="https://images.pexels.com/photos/31714607/pexels-photo-31714607/free-photo-of-aerial-view-of-yacht-on-turquoise-ocean-waters.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="box3"><img src="https://images.pexels.com/photos/29975496/pexels-photo-29975496/free-photo-of-vibrant-pink-tulips-against-a-clear-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="box4"><img src="https://images.pexels.com/photos/31164667/pexels-photo-31164667/free-photo-of-vintage-japanese-car-by-traditional-shop.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="box5"><img src="https://images.pexels.com/photos/31660804/pexels-photo-31660804/free-photo-of-abstract-reflection-of-toronto-skyscraper-windows.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="box6"><img src="https://images.pexels.com/photos/31685757/pexels-photo-31685757/free-photo-of-elegant-cappuccino-on-sunlit-sofa-with-shadows.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></div>
+        <div class="box7"><video src="https://videos.pexels.com/video-files/31688359/13500900_360_640_30fps.mp4" controls autoplay></video></div>
+        <div class="box8"><iframe width="560" height="315" src="https://www.youtube.com/embed/BHACKCNDMW8?si=Mrke45KOr_CREa_p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="box9">Text box 9</div>
+        <div class="box10">Text box 10</div>
+    </div>
+</body>
+</html>
