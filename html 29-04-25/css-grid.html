@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            display: flex;
+            padding: 10px;
+            place-items: center;
+        }
+        .logo{
+            margin-right: 15%;
+            color: black;
+        }
+        .home, .news, .service {
+            margin-right: 5%;
+            margin-left: 5%;
+            color: black;
+        }
+        .search{
+            margin-right: 15%;
+            margin-left: 15%;
+        }
+        a{
+            text-decoration: none;
+            color: balck;
+            font-weight: bold;
+        }
+        .main{
+            float: left;
+            width: 25%;
+            height: 600px;
+            background-color: beige;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+        img{
+            width: 1000px;
+            height: 600px;
+        }
+       
+        .footer{
+            background-color: aquamarine;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="logo"><a href="#">Logo</a></div>
+        <div class="home"><a href="#">Home</a></div>
+        <div class="news"><a href="">News</a></div>
+        <div class="service"><a href="">Service</a></div>
+        
+        
+        <input type="search"> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+        <a href="#">Search</a>
+       
+    </div>
+    <div class="main">
+        <div class="menu"><a href="#">Menu 1</a></div>
+        <div class="menu"><a href="#">Menu 2</a></div>
+        <div class="menu"><a href="#">Menu 3</a></div>
+        <div class="menu"><a href="#">Menu 4</a></div>
+            
+    </div>
+        <div>
+            
+                <img src="https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=600" alt="">
+            
+        </div>
+        <div class="footer">
+            <div>Footer</div>
+        </div>
 </body>
 </html>
