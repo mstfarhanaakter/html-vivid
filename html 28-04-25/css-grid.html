@@ -8,15 +8,15 @@
     <style>
         .container {
             display: grid;
-            background-color: rgb(215, 255, 196);
+            background-color: rgba(159, 161, 4, 0.13);
             padding: 10px;
             text-align: center;
             grid-template-columns: repeat(3, 100px);
             grid-template-rows: repeat(3, 150px);
             grid-template-areas:
-                "nav header header header header header "
+                "header header header header header header "
                 "nav content content content content ads"
-                "nav footer footer footer footer ads "
+                "nav footer footer footer footer footer "
             ;
             grid-gap: 10px;
            
@@ -30,19 +30,26 @@
         }
         .header{
             grid-area: header;
+            background-color: rgb(248, 74, 141);
+            color: white;
         }
         .nav{
             grid-area: nav;
+            background-color: rgb(238, 202, 156);
         }
         .content{
             grid-area: content;
+            background-color: rgb(197, 111, 137);
+            color: white;
         }
 
         .ads{
             grid-area: ads;
+            background-color: rgb(156, 232, 238);
         }
         .footer{
             grid-area: footer;
+            background-color: rgb(185, 156, 238);
         }
        /* div ul {
             list-style-type: none;
@@ -72,6 +79,7 @@
         <div class="content">Article</div>
         <div class="ads">Ads</div>
         <div class="footer">Footer</div>
+        
     </div>
 </body>
 
