@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        .container {
             display: grid;
             background-color: rgb(215, 255, 196);
             padding: 10px;
             text-align: center;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 150px);
             grid-template-areas:
-                "header header header"
-                "nav . article"
+                "nav header header header header header "
+                "nav content content content content ads"
+                "nav footer footer footer footer ads "
             ;
+            grid-gap: 10px;
+           
         }
-        .grid-container > div{
+
+        .container > div {
             border: 2px solid black;
+            display: grid;
+            place-items: center;
+            font-size: 18px;
         }
-        
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .content{
+            grid-area: content;
+        }
+
+        .ads{
+            grid-area: ads;
+        }
+        .footer{
+            grid-area: footer;
+        }
+       /* div ul {
+            list-style-type: none;
+        }
+        div ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+           
+            
+        } */
     </style>
+
 </head>
+
 <body>
     <div class="container">
         <div class="header">Header</div>
-        <div class="nav">Navigation</div>
+        <div class="nav">SlideBar
+            <!-- <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul> -->
+        </div>
         <div class="content">Article</div>
         <div class="ads">Ads</div>
         <div class="footer">Footer</div>
     </div>
 </body>
+
 </html>
