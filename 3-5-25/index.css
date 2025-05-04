@@ -1,0 +1,66 @@
+div{
+    background-color: #2e9bc4;
+    
+    
+}
+.logo{
+    
+}
+.logo img {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+.search > img{
+    width: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    
+}
+a:hover{
+    background-color: #2e9bc4;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+button{
+    background-color: beige;
+    border: none;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.drop-down-main{
+    position: relative;
+    display: inline;
+}
+.drop-down-menu {
+    position: absolute;
+    right: 0px;
+    top: 25px; 
+    background-color: #faece9;
+    text-align: center;
+    min-width: 60px;
+    display: none;
+   
+}
+.drop-down-menu a{
+    display: block;
+    padding: 5px;
+}
+.drop-down-menu a:hover{
+    background-color: beige;
+    color: red;
+
+}
+.drop-down-main:hover .drop-down-menu{
+    display: block;
+}
+
