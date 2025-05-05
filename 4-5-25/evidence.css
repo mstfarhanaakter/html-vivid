@@ -16,10 +16,12 @@
     margin-left: 10px;
 
 }
-.logo a{
+
+.logo a {
     color: white;
 }
-.logo a:hover{
+
+.logo a:hover {
     background-color: black;
     color: white;
     margin: 0px;
@@ -99,7 +101,8 @@ a:hover {
     padding: 10px;
     margin-top: 10px;
 }
-.search button:hover{
+
+.search button:hover {
     background-color: beige;
     color: red;
 }
@@ -127,24 +130,28 @@ input {
 ul li {
     list-style-position: inside;
 }
+
 .footer {
     clear: both;
-    background-color: rgb(27, 118, 118) ;
+    background-color: rgb(27, 118, 118);
     color: white;
     height: 50px;
     display: flex;
     align-items: center;
-    text-align: center;  
+    text-align: center;
 }
-.contact{
+
+.contact {
     display: inline;
 }
-.image{
+
+.image {
     /* width: 750px; */
     /* float: right; */
-    
+
 }
-.image img{
+
+.image img {
     width: 1115px;
     height: 450px;
 }
