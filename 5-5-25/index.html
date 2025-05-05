@@ -5,90 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main{
-            display: flex;
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+        background-color: lightblue;
+		width:100%;
+        
+		
+           
+        }
+        .nav {
+            display: flex; 
             align-items: center;
-            background-color: rgb(77, 172, 228);
-            color: whitesmoke;
-            font-size: 20px;
-            font-weight: bold;
+            position: relative; 
             
+             
         }
-        .main img {
-            width: 40px; 
-        }
-        .main button{
-            padding: 5px;
-            background-color: salmon;
-            border: none;
-            width: 80px;
-            margin-left: 30px;
-            
-        }
-        a{
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            
+        
+        .logo img{
+            width: 50px;
+            margin-top: 2px;
         }
         .menu{
             display: inline;
+            justify-content: center;
         }
-        input{
-            margin-left: 550px;
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            
         }
-        .search{
-            display: inline;
-            margin-right: 10px;
-        }
-        .slidebar{
-            width: 15%;
-    background: lightgoldenrodyellow;
-    height: 600px;
-    float: left;
-    margin-right: 30px;
-        }
-        button a{
+        .menu ul li a {
+            text-decoration: none;
             color: black;
-            padding: 20px;
+            font-family: cursive;
+            font-weight: bold;
+            margin-left: 60px;
+           
+        }
+        .search-bar{
+            position: absolute;
+            right: 5px;
+        }
+        .nav a:hover{
+            background-color: beige;
+            padding: 16px;
+            color: red;
+        }
+        .body{
+            float:left;
+		width:15%;
+		background-color: lightgreen;
+        height: 668px;
+        }
+        .body a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: block;
+            justify-content: center;
+            <!-- margin-left: 50px; -->
+            margin-top: 10px;
+            padding: 10px;
             
         }
-        .grid{
-            grid-template-columns: ;
+        .body a:hover{
+            background-color: beige;
+            color: red;
             
+        }
+        .banner{
+            
+        }
+        .banner img{
+            width: 1074px;
+            height: 400px;
+            float: left;
+        }
+        .content{
+            
+        }
+        .content .A{
+            float: left;
+            background-color: lightgray;
+            width: 42%;
+            height: 250px;
+            
+        }
+        .content .B {
+            float: right;
+            background-color: rgb(244, 141, 141);
+            width: 43%;
+            height: 250px;
+        }
+        .c {
+            
+            float: none;
+            background-color: antiquewhite;
+            
+            
+           
+            
+        }
+        .footer{
+            float: none;
+            clear: both;
+            background-color: lightseagreen;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
-    <div class="main">
-        <img src="1.png" alt=""> &nbsp;
-        Logo
-        
-        <button><a href="#">Home</a></button> &nbsp;
-        <button><a href="#">About Us</a></button>&nbsp;
-        <button><a href="#">Contact</a></button> &nbsp;
-        <br>
-        <div class="search">
-        <input type="search" placeholder="Search Here!"> &nbsp;
-        <button><a href="#">Search</a></button>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="1.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Here!">
+                <button>Go</button>
+            </div>
+            
+        </div>
     </div>
+    <div class="body">
+        <div>
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <a href="#">Menu 4</a>
+            <a href="#">Menu 5</a>
+        </div>
     </div>
-    <!-- <div class="slidebar">
-        <button><a href="#">Menu 1</a></button> <br>
-        <button><a href="#">Menu 2</a></button> <br>
-        <button><a href="#">Menu 3</a></button> <br>
-        <button><a href="#">Menu 4</a></button>
-    </div>
-    <div>
-        <img src="" alt="">
-    </div> -->
-    <div class="grid">
-        <button><a href="#">Menu 1</a></button> <br>
-        <button><a href="#">Menu 2</a></button> <br>
-        <button><a href="#">Menu 3</a></button> <br>
-        <button><a href="#">Menu 4</a></button>
-    </div>
-
+        <div class="banner">
+            <img src="2.jpg" alt="">
+        </div>
+        <!-- content -->
+         <div class="content">
+            <div class="A">Article 1</div>
+            <div class="B">Article 2</div>
+         </div>
+         <!-- vivid -->
+         <div class="c">Hello There</div>
+         <div class="footer">Footer</div>
     
 </body>
 </html>
