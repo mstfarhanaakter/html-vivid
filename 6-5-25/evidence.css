@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.logo img {
+    width: 50px;
+    margin-left: 10px;
+
+}
+
+.logo a {
+    color: white;
+}
+
+/* .logo a:hover {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px; */
+/* } */
+
+/* .logo > .top-menus{
+    display: flex;
+    justify-content: end;
+} */
+.main {
+    background-color:  lightseagreen;
+    color: white;
+}
+
+.top-menus {
+    /* margin-left: 50%; */
+    margin-left: 25%;
+
+}
+
+button {
+    background-color: transparent;
+    padding: 16px;
+    border: none;
+
+
+}
+
+button a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.top-menus a:hover {
+    background-color: azure;
+    padding: 18px;
+    color: red;
+}
+
+.vertical {
+    width: 15%;
+    background: lightgoldenrodyellow;
+    height: 500px;
+    float: left;
+    /* margin-right: 30px; */
+
+}
+
+.vertical a {
+    display: block;
+    padding: 20px;
+    left: 10px;
+
+}
+
+.vertical a:hover {
+    background-color: black;
+    color: white;
+}
+
+.search {
+    display: inline;
+    margin-left: 150px
+}
+
+.search button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.search button:hover {
+    background-color: beige;
+    color: red;
+}
+
+input {
+    width: 200px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(27, 118, 118);
+    margin-left: 10px;
+
+}
+
+.text {
+    margin-top: 30px;
+    line-height: 1.5;
+
+}
+
+.text h2 {
+    color: rgb(27, 118, 118);
+}
+
+ul li {
+    list-style-position: inside;
+}
+
+/* .footer {
+    clear: both;
+    background-color: rgb(27, 118, 118);
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+} */
+
+.contact {
+    display: inline;
+}
+
+.image {
+    /* width: 750px; */
+    /* float: right; */
+
+}
+
+.image img {
+    width: 1150px;
+    height: 500px;
+    
+}
+.footer {
+    float: none;
+    clear: both;
+    background-color: lightseagreen;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
