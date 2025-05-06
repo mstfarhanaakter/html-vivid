@@ -32,6 +32,11 @@
             margin-top: 2px;
         }
 
+        .logo > a:hover {
+            color: red;
+            padding: none;
+        }
+
         .menu {
             display: inline;
             justify-content: center;
@@ -73,17 +78,19 @@
 
         .body a {
             text-decoration: none;
+            overflow: hidden;
             color: black;
             font-weight: bold;
             display: block;
             justify-content: center;
-            < !-- margin-left: 50px;
-            -->margin-top: 10px;
+            /* <!-- margin-left: 50px;--> */
+            margin-top: 10px;
             padding: 10px;
+
 
         }
 
-        .body a:hover {
+        .a:hover {
             background-color: beige;
             color: red;
 
@@ -92,7 +99,7 @@
         .banner {}
 
         .banner img {
-            width: 1074px;
+            width: 1140px;
             height: 400px;
             float: left;
         }
@@ -114,8 +121,10 @@
 
         .c {
 
-            float: none;
-            background-color: antiquewhite;
+            float: left;
+            background-color: rgb(255, 204, 138);
+            float: initial;
+
         }
 
         .footer {
@@ -134,7 +143,7 @@
     <div class="header">
         <div class="nav">
             <div class="logo">
-                <img src="1.png" alt="">
+                <a href="#"><img src="1.png" alt=""></a>
             </div>
             <div class="menu">
                 <ul>
@@ -170,7 +179,9 @@
         <div class="B">Article 2</div>
     </div>
     <!-- vivid -->
-    <div class="c">Hello There</div>
+    <div class="c">
+        <div>Hello There</div>
+    </div>
     <div class="footer">Footer</div>
 
 </body>
